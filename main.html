@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Quiz</title>
+  <style>
+    /* Styling for the blockquote */
+    blockquote {
+      max-width: 600px;
+      margin: 10px;
+      padding: 15px;
+      border-left: 8px solid green;
+      background-color: #f8fffe;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-    <h2>What is the capital of India?</h2>
-    <form>
-        <input type="radio" id="new-delhi" name="capital" value="New Delhi">
-        <label for="new-delhi">New Delhi</label><br>
-
-        <input type="radio" id="mumbai" name="capital" value="Mumbai">
-        <label for="mumbai">Mumbai</label><br>
-    </form>
-
-    <blockquote style="
-        max-width: 600px;
-        margin: 10px;
-        padding: 15px;
-        border-left: 8px solid green;
-        background-color: #f8fffe;
-        font-weight: bold;
-    ">
-        New Delhi is the capital of India and an administrative district of NCT Delhi.
-    </blockquote>
+  <h1>Trivia Quiz</h1>
+  
+  <!-- Question and Options -->
+  <form>
+    <p>What is the capital of India?</p>
+    <input type="radio" id="newDelhi" name="capital" value="newDelhi">
+    <label for="newDelhi">New Delhi</label><br>
+    
+    <input type="radio" id="mumbai" name="capital" value="mumbai">
+    <label for="mumbai">Mumbai</label><br><br>
+  </form>
+  
+  <!-- Quotation -->
+  <blockquote cite="https://en.wikipedia.org/wiki/Delhi">
+    "New Delhi is the capital of India and an administrative district of NCT Delhi." - Wikipedia
+  </blockquote>
 
 </body>
 </html>
